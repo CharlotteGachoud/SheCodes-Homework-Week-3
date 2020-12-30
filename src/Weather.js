@@ -31,14 +31,14 @@ function SearchEngine() {
           </ul>
         </div>
       );
-    } else{
+    } else {
       <Loader
          type="Bars"
          color="rgb(236, 73, 24)"
          height={20}
          width={20}
       />
-    }
+    };
   }
 
   function handleSubmit(event) {
