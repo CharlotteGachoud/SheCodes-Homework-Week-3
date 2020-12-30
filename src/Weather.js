@@ -15,11 +15,12 @@ function SearchEngine() {
     let wind = Math.round(response.data.wind.speed);
     let icon = response.data.weather[0].icon;
     let iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    let cityName = response.data.name;
 
     if (temperature){
       setMessage(
         <div>
-          <h2>{city}</h2>
+          <h2>{cityName}</h2>
           <ul>
             <li>Temperature: {temperature}°C</li>
             <li>Description: {description}</li>
